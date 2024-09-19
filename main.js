@@ -144,6 +144,7 @@ gui.add(options, "static").onChange(function (e) {
   if (e) {
     dynamic = false;
     orbit.enabled = true;
+    camera.lookAt(model.position);
   } else {
     dynamic = true;
     orbit.enabled = false;
